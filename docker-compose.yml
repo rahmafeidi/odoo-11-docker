@@ -6,8 +6,8 @@ services:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
 
-  odoo:
-    image: image_name:version
+  odoo10:
+    image: odoo:10
     depends_on:
       - db
     ports:
