@@ -6,12 +6,12 @@ services:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
 
-  odoo10:
+  odoo:
     image: image_name:version
     depends_on:
       - db
     ports:
-      - "10000:8069"
+      - "8069:8069"
     tty: true
     command: -- --dev=reload
     volumes:
